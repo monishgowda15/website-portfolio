@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Monish Gowda G S — Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  
+  
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">MG<span class="logo-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#achievements" class="mob-link">Achievements</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ░░░░░░░░░░ HERO ░░░░░░░░░░ -->
+  <section id="home" class="hero">
+    <!-- Animated BG canvas -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Grid overlay -->
+    <div class="hero-grid"></div>
+
+    <!-- Red orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">USN: 1BI25VL026</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="name-line" data-text="MONISH">MONISH</span>
+        <span class="name-line name-line--accent" data-text="GOWDA">GOWDA</span>
+      </h1>
+
+      <p class="hero-tagline">
+        <span class="tag-item">EE (VDT)</span>
+        <span class="tag-sep">·</span>
+        <span class="tag-item">Bangalore Institute of Technology</span>
+        <span class="tag-sep">·</span>
+        <span class="tag-item">2nd Semester</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">
+          <span>Explore Portfolio</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <span>Get In Touch</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ STATS BAR ░░░░░░░░░░ -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-num" data-target="6">0</span>
+      <span class="stat-label">Technical Skills</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="5">0</span>
+      <span class="stat-label">Soft Skills</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="3">0</span>
+      <span class="stat-label">Achievements</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="2">0</span>
+      <span class="stat-label">Semester</span>
+    </div>
+  </div>
+
+  <!-- ░░░░░░░░░░ ABOUT ░░░░░░░░░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01 — WHO I AM</span>
+        <h2 class="section-title">About <span class="text-red">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Identity card -->
+        <div class="glass-card about-card reveal">
+          <div class="card-glow"></div>
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-core">
+              <span>MG</span>
+            </div>
+            <div class="avatar-dots">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Full Name</span>
+              <span class="info-value">Monish Gowda G S</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">USN</span>
+              <span class="info-value mono">1BI25VL026</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">College</span>
+              <span class="info-value">Bangalore Institute of Technology</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Branch</span>
+              <span class="info-value">EE (VDT)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Semester</span>
+              <span class="info-value">2nd Semester</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-value status-badge"><span class="status-dot"></span>Active Student</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Objective card -->
+        <div class="glass-card objective-card reveal reveal-delay-1">
+          <div class="card-glow card-glow--right"></div>
+          <span class="obj-eyebrow">Career Objective</span>
+          <blockquote class="objective-text">
+            "I am a passionate engineering student committed to learning new technologies, strengthening my technical and problem-solving abilities, and contributing innovative ideas while continuously growing as a future engineer."
+          </blockquote>
+          <div class="obj-footer">
+            <div class="obj-tag">Engineering</div>
+            <div class="obj-tag">Technology</div>
+            <div class="obj-tag">Innovation</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ SKILLS ░░░░░░░░░░ -->
+  <section id="skills" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02 — CAPABILITIES</span>
+        <h2 class="section-title">My <span class="text-red">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skills-col reveal">
+          <h3 class="skills-col-title">
+            <i class="fas fa-microchip"></i>
+            Technical Skills
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-pct="85">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                <span class="skill-name">HTML</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-pct="80">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fab fa-css3-alt"></i></span>
+                <span class="skill-name">CSS</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-pct="70">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-pct="75">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fab fa-python"></i></span>
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-pct="72">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fas fa-code"></i></span>
+                <span class="skill-name">C Programming</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item" data-pct="90">
+              <div class="skill-bar-header">
+                <span class="skill-icon"><i class="fas fa-file-word"></i></span>
+                <span class="skill-name">MS Office</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-Technical Skills -->
+        <div class="skills-col reveal reveal-delay-1">
+          <h3 class="skills-col-title">
+            <i class="fas fa-brain"></i>
+            Non-Technical Skills
+          </h3>
+          <div class="soft-skills-grid">
+            <div class="soft-card">
+              <div class="soft-icon-wrap">
+                <i class="fas fa-crown"></i>
+              </div>
+              <span class="soft-name">Leadership</span>
+              <div class="soft-orb"></div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon-wrap">
+                <i class="fas fa-comments"></i>
+              </div>
+              <span class="soft-name">Communication</span>
+              <div class="soft-orb"></div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon-wrap">
+                <i class="fas fa-users"></i>
+              </div>
+              <span class="soft-name">Teamwork</span>
+              <div class="soft-orb"></div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon-wrap">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <span class="soft-name">Problem Solving</span>
+              <div class="soft-orb"></div>
+            </div>
+            <div class="soft-card">
+              <div class="soft-icon-wrap">
+                <i class="fas fa-clock"></i>
+              </div>
+              <span class="soft-name">Time Management</span>
+              <div class="soft-orb"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ ACHIEVEMENTS ░░░░░░░░░░ -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03 — MILESTONES</span>
+        <h2 class="section-title">My <span class="text-red">Achievements</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="ach-card glass-card reveal">
+          <div class="ach-number">01</div>
+          <div class="ach-icon-wrap">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3 class="ach-title">Technical Workshop Participation</h3>
+          <p class="ach-desc">Actively participated in technical workshops, gaining hands-on experience with industry-relevant tools and emerging technologies.</p>
+          <div class="ach-badge">Workshop</div>
+        </div>
+
+        <div class="ach-card glass-card reveal reveal-delay-1">
+          <div class="ach-number">02</div>
+          <div class="ach-icon-wrap">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3 class="ach-title">Academic Mini Projects</h3>
+          <p class="ach-desc">Successfully completed multiple academic mini-projects, applying theoretical knowledge to real-world engineering problem-solving.</p>
+          <div class="ach-badge">Academic</div>
+        </div>
+
+        <div class="ach-card glass-card reveal reveal-delay-2">
+          <div class="ach-number">03</div>
+          <div class="ach-icon-wrap">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="ach-title">College Technical Events</h3>
+          <p class="ach-desc">Active participant in college technical events, showcasing engineering skills and networking with peers across disciplines.</p>
+          <div class="ach-badge">Events</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ CONTACT ░░░░░░░░░░ -->
+  <section id="contact" class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04 — REACH OUT</span>
+        <h2 class="section-title">Get In <span class="text-red">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">Have an opportunity, project, or just want to connect? I'm always open to conversations about technology and engineering.</p>
+
+          <div class="contact-items">
+            <a href="mailto:monishgowda@email.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-item-body">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">monishgowda@email.com</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-university"></i></div>
+              <div class="contact-item-body">
+                <span class="contact-item-label">College</span>
+                <span class="contact-item-value">Bangalore Institute of Technology</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="contact-item-body">
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Bengaluru, Karnataka, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap glass-card reveal reveal-delay-1">
+          <div class="card-glow"></div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" placeholder="John Doe" required />
+                <span class="form-line"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Your Email</label>
+                <input type="email" id="femail" placeholder="john@example.com" required />
+                <span class="form-line"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" placeholder="Let's collaborate" required />
+              <span class="form-line"></span>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+              <span class="form-line"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent successfully!</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░ FOOTER ░░░░░░░░░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">MG<span class="logo-dot">.</span></div>
+      <p class="footer-copy">Copyright &copy; 2026 Monish Gowda G S. All Rights Reserved.</p>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
